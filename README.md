@@ -86,4 +86,13 @@ The data was checked for and cleaned by removing any rows with `NULL` values in 
 1. Create the database:
    ```sql
    CREATE DATABASE sql_project_p2;
+2. Create the table:
+3. Use the CREATE TABLE retail_sales schema shown above.
+
+4. Import the dataset into the retail_sales table using your SQL tool or CSV import utility.
+
+5. Run analysis queries from any SQL editor to generate insights and answer the business questions listed.
+
+📌 Conclusion
+This project offers a complete introduction to SQL data analysis using real-world retail data. From setting up the database and cleaning data to exploring trends and answering business questions, it helps build foundational SQL skills crucial for data analyst roles.
 
