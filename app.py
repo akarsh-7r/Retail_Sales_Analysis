@@ -73,8 +73,6 @@ footer {
 
 
 
-
-
 st.set_page_config(page_title="Retail SQL Dashboard", layout="wide")
 
 # Style settings
@@ -170,7 +168,5 @@ with tab3:
 # Footer
 st.markdown("---")
 st.markdown("Made with ❤️ using Streamlit and SQL | [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
-
-
 
 
