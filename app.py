@@ -70,7 +70,7 @@ st.markdown("Explore retail sales data by category, gender, and more. Generated 
 # Load CSV
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/Data_Set.csv")
+    return pd.read_csv("Data_Set.csv")
 
 
 df = load_data()
@@ -152,3 +152,4 @@ with tab3:
 # Footer
 st.markdown("---")
 st.markdown("Made with ❤️ using Streamlit and SQL | [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
+
