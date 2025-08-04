@@ -163,3 +163,4 @@ if not df.empty:
     # --- Footer ---
     st.markdown("---")
     st.markdown("Made with ❤️ using Streamlit and SQL | [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
+
