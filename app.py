@@ -6,48 +6,68 @@ import seaborn as sns
 
 st.markdown("""
 <style>
-/* App background */
+/* Background and font */
 .stApp {
-    background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(to bottom right, #f9f9f9, #dce3f3);
     font-family: 'Segoe UI', sans-serif;
-    color: #222222;
+    color: #222;
 }
 
-/* Sidebar styling */
+/* Sidebar */
 .css-1d391kg {
-    background-color: #f0f2f6 !important;
-    border-right: 2px solid #dee2e6;
+    background-color: #f0f4f8 !important;
+    border-right: 1px solid #ddd;
 }
 
-/* Titles and headers */
+/* Title */
 h1 {
-    font-size: 2.8rem !important;
+    font-size: 2.5rem !important;
     font-weight: 700;
-    color: #1c1c1c;
-}
-h2, h3 {
-    color: #1c1c1c;
+    color: #2c3e50;
+    padding-top: 10px;
 }
 
-/* Metric cards styling */
+/* Subheaders */
+h2, h3 {
+    color: #2c3e50;
+    margin-top: 1rem;
+}
+
+/* Metric cards */
 [data-testid="stMetric"] {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 16px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: #1a1a1a !important;
+    font-weight: 600;
     text-align: center;
-    color: #1c1c1c !important;  /* Ensures dark text */
 }
 
-/* DataFrames and plots */
-.stDataFrame, .stPyplot {
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+/* Table & chart sections */
+.stDataFrame, .stPyplot, .element-container:has(> .stPlotlyChart) {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Section divider */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    visibility: hidden;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
@@ -148,5 +168,6 @@ with tab3:
 # Footer
 st.markdown("---")
 st.markdown("Made with ❤️ using Streamlit and SQL | [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
+
 
 
