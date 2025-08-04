@@ -6,7 +6,7 @@ import seaborn as sns
 
 st.markdown("""
 <style>
-/* App background */
+/* Background and font */
 .stApp {
     background: linear-gradient(to bottom right, #f9f9f9, #dce3f3);
     font-family: 'Segoe UI', sans-serif;
@@ -24,32 +24,50 @@ h1 {
     font-size: 2.5rem !important;
     font-weight: 700;
     color: #2c3e50;
+    padding-top: 10px;
 }
 
-/* Metric cards full override */
+/* Subheaders */
+h2, h3 {
+    color: #2c3e50;
+    margin-top: 1rem;
+}
+
+/* Metric cards */
 [data-testid="stMetric"] {
     background-color: #ffffff;
     padding: 16px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: #1a1a1a !important;
+    font-weight: 600;
     text-align: center;
 }
 
-/* Value (main number) */
-[data-testid="stMetric"] div[data-testid="stMetricValue"] {
-    color: #222 !important;
-    font-size: 1.6rem;
-    font-weight: bold;
+/* Table & chart sections */
+.stDataFrame, .stPyplot, .element-container:has(> .stPlotlyChart) {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
-/* Label (metric name) */
-[data-testid="stMetricLabel"] {
-    color: #333 !important;
-    font-weight: 600;
-    font-size: 1rem;
+/* Section divider */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    visibility: hidden;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
