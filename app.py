@@ -10,49 +10,45 @@ st.markdown("""
 .stApp {
     background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
     font-family: 'Segoe UI', sans-serif;
-    color: #333333;
+    color: #222222;
 }
 
 /* Sidebar styling */
-.css-1d391kg {  /* Sidebar background */
+.css-1d391kg {
     background-color: #f0f2f6 !important;
     border-right: 2px solid #dee2e6;
 }
 
-/* Title styling */
+/* Titles and headers */
 h1 {
     font-size: 2.8rem !important;
     font-weight: 700;
-    color: #2c3e50;
+    color: #1c1c1c;
 }
-
-/* Subheaders */
 h2, h3 {
-    color: #2c3e50;
-    font-weight: 600;
+    color: #1c1c1c;
 }
 
-/* DataFrame and Chart block shadow */
-.block-container {
-    padding: 2rem;
+/* Metric cards styling */
+[data-testid="stMetric"] {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #1c1c1c !important;  /* Ensures dark text */
 }
-.stDataFrame, .stPlotlyChart, .stPyplot {
+
+/* DataFrames and plots */
+.stDataFrame, .stPyplot {
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #ffffff;
     padding: 1rem;
 }
-
-/* Metric cards */
-[data-testid="stMetric"] {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    text-align: center;
-}
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
@@ -152,4 +148,5 @@ with tab3:
 # Footer
 st.markdown("---")
 st.markdown("Made with ❤️ using Streamlit and SQL | [GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
+
 
