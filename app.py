@@ -12,7 +12,7 @@ st.title("Retail Sales Analysis Dashboard")
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("retail_sales.csv")
+    df = pd.read_csv("Data_Set.csv")
     return df
 
 df = load_data()
@@ -85,3 +85,4 @@ with tab3:
     sns.barplot(data=top_products, x="total_sale", y="product_name", ax=ax)
     ax.set_title(f"Top {top_n} Selling Products")
     st.pyplot(fig)
+
