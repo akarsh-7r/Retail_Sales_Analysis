@@ -96,3 +96,8 @@ The data was checked for and cleaned by removing any rows with `NULL` values in 
 📌 Conclusion
 This project offers a complete introduction to SQL data analysis using real-world retail data. From setting up the database and cleaning data to exploring trends and answering business questions, it helps build foundational SQL skills crucial for data analyst roles.
 
+---
+
+## 📁 LIVE SITE
+https://retailsalesanalysis-ku9bcfqlow9sozsilihupk.streamlit.app/
+
